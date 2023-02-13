@@ -13,6 +13,15 @@ public class LevelManager : MonoBehaviour
 
     private void Awake()
     {
+#if DEBUG
+        foreach (var t in levelsUnlockedAtTheStart)
+        {
+            UnlockLevel(t);
+        }
+#else
+        // don't unlock any levels
+#endif
+
         if (instance == null)
         {
             instance = this;
@@ -21,18 +30,14 @@ public class LevelManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
-        // foreach (var t in levelsUnlockedAtTheStart)
-        // {
-        //     UnlockLevel(t);
-        // }
     }
+
     public void ResetLevels()
     {
         for (int i = 1; i <= 3; i++)
         {
             LockLevel(i);
-        } 
+        }
     }
 
     public void LockLevel(int i)
@@ -40,6 +45,7 @@ public class LevelManager : MonoBehaviour
         Debug.Log($"Level {i} is locked");
         PlayerPrefs.SetInt($"level{i}", 0);
     }
+
     public void UnlockLevel(int i)
     {
         Debug.Log($"Level {i} is unlocked");

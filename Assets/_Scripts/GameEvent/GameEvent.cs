@@ -7,7 +7,7 @@ public class GameEvent : ScriptableObject
 {
     #if UNITY_EDITOR
     [Multiline]
-    public string DeveloperDescription = "";
+    public string developerDescription = "";
     #endif
 
     private readonly List<GameEventListener> gameEventListeners = new List<GameEventListener>();

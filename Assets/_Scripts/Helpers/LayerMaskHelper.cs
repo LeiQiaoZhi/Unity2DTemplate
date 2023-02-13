@@ -1,13 +1,9 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Security.Cryptography;
 using UnityEngine;
 
 public class LayerMaskHelper  
 {
-    public static bool IsInLayerMask(int layer, LayerMask layermask)
+    public static bool IsLayerInLayerMask(int layer, LayerMask layerMask)
     {
-        return layermask == (layermask | (1 << layer));
+        return layerMask == (layerMask | (1 << layer));
     }
 }
