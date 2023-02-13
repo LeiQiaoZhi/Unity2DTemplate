@@ -7,13 +7,13 @@ public class GameSceneManager : MonoBehaviour
 {
     public void ReloadScene()
     {
-        Debug.Log("reload scene");
+        LoggerX.Log(Category.Scene,"reload scene");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void LoadScene(int index)
     {
-        Debug.Log($"Loading scene {SceneManager.GetSceneByBuildIndex(index).name}");
+        LoggerX.Log(Category.Scene,$"Loading scene {SceneManager.GetSceneByBuildIndex(index).name}");
         SceneManager.LoadScene(index, LoadSceneMode.Single);
     }
 

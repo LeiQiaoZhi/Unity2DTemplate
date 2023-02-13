@@ -30,7 +30,7 @@ public class UIManager : MonoBehaviour
         AchievementManager achievementManager = AchievementManager.instance;
         if (achievementManager.IsAchievementUnlocked(i))
         {
-            Debug.Log($"Achivement {achievementManager.achievementNames[i]} is already unlocked");
+            LoggerX.Log(Category.Achievement,$"Achivement {achievementManager.achievementNames[i]} is already unlocked");
             return;
         }
         achievementManager.UnlockAchievement(i);

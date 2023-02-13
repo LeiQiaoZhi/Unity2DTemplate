@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 // SINGLETON
 public class LevelManager : MonoBehaviour
 {
-    public static LevelManager instance;
+    public static LevelManager Instance;
     public List<int> levelsUnlockedAtTheStart;
 
     private void Awake()
@@ -22,9 +22,9 @@ public class LevelManager : MonoBehaviour
         // don't unlock any levels
 #endif
 
-        if (instance == null)
+        if (Instance == null)
         {
-            instance = this;
+            Instance = this;
         }
         else
         {
@@ -42,20 +42,20 @@ public class LevelManager : MonoBehaviour
 
     public void LockLevel(int i)
     {
-        Debug.Log($"Level {i} is locked");
+        LoggerX.Log(Category.Level,$"Level {i} is locked");
         PlayerPrefs.SetInt($"level{i}", 0);
     }
 
     public void UnlockLevel(int i)
     {
-        Debug.Log($"Level {i} is unlocked");
+        LoggerX.Log(Category.Level,$"Level {i} is unlocked");
         PlayerPrefs.SetInt($"level{i}", 1);
     }
 
     public bool IsLevelUnlocked(int i)
     {
         int unlocked = PlayerPrefs.GetInt($"level{i}", 0);
-        Debug.Log($"level {i} is unlocked: {unlocked}");
-        return unlocked == 1 ? true : false;
+        LoggerX.Log(Category.Level,$"level {i} is unlocked: {unlocked}");
+        return unlocked == 1;
     }
 }

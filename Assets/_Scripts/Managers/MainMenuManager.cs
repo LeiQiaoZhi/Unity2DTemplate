@@ -113,7 +113,7 @@ public class MainMenuManager : MonoBehaviour
         for (int i = 0; i < achievementCanvasGroups.Count; i++)
         {
             bool unlocked = AchievementManager.instance.IsAchievementUnlocked(i);
-            Debug.Log($"achievement {i} is unlocked: {unlocked}");
+            LoggerX.Log(Category.Achievement,$"achievement {i} is unlocked: {unlocked}");
             achievementCanvasGroups[i].alpha = unlocked ? 1 : 0.5f;
         }
     }

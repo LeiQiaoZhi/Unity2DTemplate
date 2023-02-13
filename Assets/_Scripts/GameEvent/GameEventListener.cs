@@ -5,24 +5,24 @@ using UnityEngine.Events;
 
 public class GameEventListener : MonoBehaviour
 {
-    [Tooltip("The event to listent to")]
-    public GameEvent Event;
+    [Tooltip("The event to listen to")]
+    public GameEvent @event;
 
     [Tooltip("The response once the event is raised")]
-    public UnityEvent Response;
+    public UnityEvent response;
 
     private void OnEnable()
     {
-        Event.RegisterGameEventListener(this);
+        @event.RegisterGameEventListener(this);
     }
 
     private void OnDisable()
     {
-        Event.UnregisterGameEventListener(this);
+        @event.UnregisterGameEventListener(this);
     }
 
     public void OnRaise()
     {
-        Response.Invoke();
+        response.Invoke();
     }
 }
