@@ -22,6 +22,7 @@ public class MainMenuManager : MonoBehaviour
 
     private void Start()
     {
+        
         // default view is levels
         levelsButton.Select();
         ShowView(0);
