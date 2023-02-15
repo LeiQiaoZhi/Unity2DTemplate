@@ -12,7 +12,8 @@ namespace UnityEngine
         Scene,
         Level,
         Achievement,
-        Ability
+        Ability,
+        Weapon
     }
     
     public static class XLogger

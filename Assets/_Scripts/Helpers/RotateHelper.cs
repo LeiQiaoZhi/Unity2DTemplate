@@ -11,11 +11,11 @@ public class RotateHelper
     /// <para>- is affected by angular drag</para>
     /// </summary>
     /// <param name="rb">the RB2D to apply rotation</param>
-    /// <param name="target">rotate towards target</param> 
+    /// <param name="targetPos">rotate towards target</param> 
     /// <param name="referenceDirection">which direction to align to target, e.g. <c>tranform.right</c></param>
-    public static void SmoothRotateTowards(Rigidbody2D rb, Transform target, Vector2 referenceDirection  ,float rotateSpeed)
+    public static void SmoothRotateTowards(Rigidbody2D rb, Vector2 targetPos, Vector2 referenceDirection  ,float rotateSpeed)
     {
-        var direction = (Vector2)(target.position - rb.transform.position).normalized;
+        var direction = (Vector2)((Vector3)targetPos - rb.transform.position).normalized;
         float rotateAmount = Vector3.Cross(direction, referenceDirection).z;
         rb.angularVelocity = -rotateAmount * rotateSpeed;
     }
