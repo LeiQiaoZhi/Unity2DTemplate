@@ -9,9 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4492061fcf0448e8d516d5712becd31, type: 3}
-  m_Name: PlayerMovementSetting
+  m_Script: {fileID: 11500000, guid: be458749f907413ca4d5f52e91fc9374, type: 3}
+  m_Name: Dash Ability
   m_EditorClassIdentifier: 
-  moveSpeed: 6
-  rotationSpeed: 1000
-  accleration: 100
+  key: 32
+  useDefaultKeyInHolder: 0
+  coolDownTime: 0.5
+  activeTime: 0.2
+  dashSpeedMultiplier: 25

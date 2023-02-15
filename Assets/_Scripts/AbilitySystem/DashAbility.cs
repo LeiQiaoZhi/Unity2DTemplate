@@ -2,21 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Ability/DebugAbility")]
+[CreateAssetMenu(menuName = "Ability/DashAbility")]
 public class DashAbility : Ability
 {
     public float dashSpeedMultiplier;
+    private float _normalSpeed;
 
-    public override void OnActivate()
+    private Rigidbody2D _rb;
+    public override void OnActivate(AbilityHolder abilityHolder)
     {
-        
+        _normalSpeed = abilityHolder.GetComponent<Movement>().movementSettings.moveSpeed;
+        abilityHolder.GetComponent<Movement>().movementSettings.moveSpeed *= dashSpeedMultiplier;
+        _rb = abilityHolder.GetComponent<Rigidbody2D>();
     }
 
-    public override void WhenActive()
+    public override void WhenActive(AbilityHolder abilityHolder)
     {
+        _rb.velocity = _rb.velocity.normalized * dashSpeedMultiplier;
     }
 
-    public override void OnCoolDown()
+    public override void OnCoolDown(AbilityHolder abilityHolder)
     {
+        abilityHolder.GetComponent<Movement>().movementSettings.moveSpeed = _normalSpeed;
     }
 }

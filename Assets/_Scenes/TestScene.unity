@@ -626,7 +626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba34ec0d66746d84fa0a4fe3d08caff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ability: {fileID: 11400000, guid: 57b82427ce2768647be6ddb1b4f51a3f, type: 2}
+  ability: {fileID: 11400000, guid: 221e21dd3d6c56b45b59e66d90a193f8, type: 2}
   defaultKey: 0
 --- !u!4 &1961646375
 Transform:
@@ -658,7 +658,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 10
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}

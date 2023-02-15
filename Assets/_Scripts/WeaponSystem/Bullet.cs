@@ -17,7 +17,7 @@ public class Bullet : MonoBehaviour
     // Start is called before the first frame update
 
     public void Init(Vector2 direction)
-    {
+{
         _rb = GetComponent<Rigidbody2D>();
         _rb.velocity = direction.normalized * bulletProperties.speed;
         Destroy(gameObject, bulletProperties.lifeTime);

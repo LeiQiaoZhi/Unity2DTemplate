@@ -13,14 +13,16 @@ public class Ability : ScriptableObject
     /// <summary>
     /// Called once when the key is pressed
     /// </summary>
-    public virtual void OnActivate()
+    /// <param name="abilityHolder"></param>
+    public virtual void OnActivate(AbilityHolder abilityHolder)
     {
     }
 
     /// <summary>
     /// Called every frame when active
     /// </summary>
-    public virtual void WhenActive()
+    /// <param name="abilityHolder"></param>
+    public virtual void WhenActive(AbilityHolder abilityHolder)
     {
         
     }
@@ -28,7 +30,8 @@ public class Ability : ScriptableObject
     /// <summary>
     /// Called once when entering cooldown state (i.e. leaves active state)
     /// </summary>
-    public virtual void OnCoolDown()
+    /// <param name="abilityHolder"></param>
+    public virtual void OnCoolDown(AbilityHolder abilityHolder)
     {
         
     }

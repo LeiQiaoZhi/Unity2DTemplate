@@ -27,7 +27,7 @@ public class PlayerInput : MonoBehaviour
         var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         _movement.RotateTowards(mousePos);
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
             _weaponHolder.Fire();
         }

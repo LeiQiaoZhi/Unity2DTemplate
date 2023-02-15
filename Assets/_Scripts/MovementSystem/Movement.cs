@@ -15,7 +15,10 @@ public class Movement : MonoBehaviour
 
     public void MoveInDirection(Vector2 direction)
     {
-        _rb.velocity = direction.normalized * movementSettings.moveSpeed;
+        // _rb.velocity = direction.normalized * movementSettings.moveSpeed;
+        _rb.velocity += direction.normalized * (movementSettings.accleration * Time.deltaTime);
+        _rb.velocity = _rb.velocity.normalized * Mathf.Clamp(_rb.velocity.magnitude, 0, movementSettings.moveSpeed);
+
     }
 
     public void RotateTowards(Vector2 target)

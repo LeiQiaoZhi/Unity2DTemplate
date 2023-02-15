@@ -22,6 +22,7 @@ public class AbilityHolder : MonoBehaviour
 
     private class ReadyState : IAbilityState
     {
+        // ReSharper disable Unity.PerformanceAnalysis
         public void StateUpdate(AbilityHolder holder)
         {
             var key = (holder.ability.useDefaultKeyInHolder) ? holder.defaultKey : holder.ability.key;
@@ -29,7 +30,7 @@ public class AbilityHolder : MonoBehaviour
             {
                 // transition
                 XLogger.Log(Category.Ability, "Enter Active State");
-                holder.ability.OnActivate();
+                holder.ability.OnActivate(holder);
                 holder._nextAvailableTime = Time.time + holder.ability.coolDownTime;
                 holder._activeUntilTime = Time.time + holder.ability.activeTime;
                 holder._currentState = new ActiveState();
@@ -39,18 +40,19 @@ public class AbilityHolder : MonoBehaviour
 
     private class ActiveState : IAbilityState
     {
+        // ReSharper disable Unity.PerformanceAnalysis
         public void StateUpdate(AbilityHolder holder)
         {
             if (Time.time > holder._activeUntilTime)
             {
                 // transition
                 XLogger.Log(Category.Ability, "Enter Cooldown State");
-                holder.ability.OnCoolDown();
+                holder.ability.OnCoolDown(holder);
                 holder._currentState = new CoolDownState();
                 return;
             }
 
-            holder.ability.WhenActive();
+            holder.ability.WhenActive(holder);
         }
     }
 

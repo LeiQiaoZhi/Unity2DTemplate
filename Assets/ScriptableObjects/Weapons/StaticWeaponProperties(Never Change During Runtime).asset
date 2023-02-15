@@ -10,8 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1d42895a472941aa8f82e94a9cf20131, type: 3}
-  m_Name: PlayerWeaponProperties
+  m_Name: StaticWeaponProperties(Never Change During Runtime)
   m_EditorClassIdentifier: 
-  secondsBetweenFire: 0.1
-  halfWidth: 0.6
-  numBulletsTDLR: 05000000010000000200000002000000
+  secondsBetweenFire: 0.5
+  numBulletsTDLR: 01000000000000000000000000000000
