@@ -11,10 +11,11 @@ namespace UnityEngine
         Physics,
         Scene,
         Level,
-        Achievement
+        Achievement,
+        Ability
     }
     
-    public static class LoggerX
+    public static class XLogger
     {
         private const string InfoColor = nameof(Color.white);
         private const string WarningColor = nameof(Color.yellow);

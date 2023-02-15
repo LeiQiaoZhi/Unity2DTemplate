@@ -42,20 +42,20 @@ public class LevelManager : MonoBehaviour
 
     public void LockLevel(int i)
     {
-        LoggerX.Log(Category.Level,$"Level {i} is locked");
+        XLogger.Log(Category.Level,$"Level {i} is locked");
         PlayerPrefs.SetInt($"level{i}", 0);
     }
 
     public void UnlockLevel(int i)
     {
-        LoggerX.Log(Category.Level,$"Level {i} is unlocked");
+        XLogger.Log(Category.Level,$"Level {i} is unlocked");
         PlayerPrefs.SetInt($"level{i}", 1);
     }
 
     public bool IsLevelUnlocked(int i)
     {
         int unlocked = PlayerPrefs.GetInt($"level{i}", 0);
-        LoggerX.Log(Category.Level,$"level {i} is unlocked: {unlocked}");
+        XLogger.Log(Category.Level,$"level {i} is unlocked: {unlocked}");
         return unlocked == 1;
     }
 }
