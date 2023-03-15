@@ -1,7 +1,5 @@
 ﻿using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
-using UnityEditorInternal;
 using UnityEngine;
 
 public class DebugConsole : MonoBehaviour

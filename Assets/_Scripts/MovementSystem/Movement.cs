@@ -23,6 +23,10 @@ public class Movement : MonoBehaviour
 
     public void RotateTowards(Vector2 target)
     {
+        // XLogger.Log("rotate");
+        // var direction = (Vector2)((Vector3)target - transform.position).normalized;
+        // var angle = Mathf.Acos(Vector2.Dot(direction, transform.right))*Mathf.Rad2Deg;
+        // transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         RotateHelper.SmoothRotateTowards(_rb,target,transform.up,movementSettings.rotationSpeed);
     }
 }

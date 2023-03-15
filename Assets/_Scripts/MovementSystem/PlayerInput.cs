@@ -8,12 +8,14 @@ public class PlayerInput : MonoBehaviour
 {
     private Movement _movement;
     private WeaponHolder _weaponHolder;
+    private Camera _cam;
     
     // Start is called before the first frame update
     void Start()
     {
         _weaponHolder = GetComponentInChildren<WeaponHolder>();
         _movement = GetComponent<Movement>();
+        _cam = Camera.main;
     }
 
     // Update is called once per frame
@@ -24,7 +26,7 @@ public class PlayerInput : MonoBehaviour
 
         _movement.MoveInDirection(new Vector2(horizontal,vertical));
         
-        var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        var mousePos = _cam.ScreenToWorldPoint(Input.mousePosition);
         _movement.RotateTowards(mousePos);
 
         if (Input.GetMouseButton(0))
