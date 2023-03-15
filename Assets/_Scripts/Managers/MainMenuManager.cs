@@ -20,6 +20,8 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] AudioMixerGroup musicOutput;
     [SerializeField] AudioMixerGroup soundEffectOutput;
 
+    [Header("Graphics")] [SerializeField] private TMP_Dropdown qualityDropdown;
+
     private void Start()
     {
         
@@ -83,8 +85,18 @@ public class MainMenuManager : MonoBehaviour
 
     public void Quit()
     {
-        Debug.Log("QUIT");
-        Application.Quit();
+        var popup = MessageManager.Instance.DisplayPopup("Confirm to Quit?", "");
+        popup.AddButton("Quit", null, () =>
+        {
+            XLogger.Log(Category.UI, "confirm button pressed");
+            Application.Quit();
+            Destroy(gameObject);
+        });
+        popup.AddButton("Cancel", null, () =>
+        {
+            XLogger.Log(Category.UI, "cancel button pressed");
+            Destroy(gameObject);
+        });
     }
 
 
@@ -97,6 +109,12 @@ public class MainMenuManager : MonoBehaviour
         views[index].SetActive(true);
     }
 
+    public void SetGraphicsQuality()
+    {
+        int index = qualityDropdown.value;
+        XLogger.Log(Category.Settings,$"Graphics has been set to {QualitySettings.names[index]}");
+        QualitySettings.SetQualityLevel(index);
+    }
 
 
     public void SetLevelButtonsLock()

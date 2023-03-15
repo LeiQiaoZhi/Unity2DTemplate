@@ -20,7 +20,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 59f646dea106f5c409df10772382fdae, type: 2}
+  m_Motion: {fileID: 7400000, guid: 22b8ea83268fc1d4386a321c8a739e96, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -57,7 +57,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MessageCanvas
+  m_Name: Popup
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Leave
@@ -125,7 +125,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: d6e72e4092240334f96a42149e9d3b93, type: 2}
+  m_Motion: {fileID: 7400000, guid: 4cc3025b3cf20b0478e153b310a261bd, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

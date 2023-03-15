@@ -24,7 +24,6 @@ public class UIManager : MonoBehaviour
         levelEndScreen.SetActive(enable);
     }
 
-
     public void DisplayAchievementUnlockMessage(int i)
     {
         AchievementManager achievementManager = AchievementManager.instance;
