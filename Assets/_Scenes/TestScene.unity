@@ -571,7 +571,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 351046803}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Block (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -606,7 +606,7 @@ GameObject:
   - component: {fileID: 516288356}
   - component: {fileID: 516288355}
   - component: {fileID: 516288354}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rounded
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -733,72 +733,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &556438245
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2116675722}
-    m_Modifications:
-    - target: {fileID: 53324104487728371, guid: 8507d4526a952cc48a2b0ffda455877b, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 53324104487728371, guid: 8507d4526a952cc48a2b0ffda455877b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 53324104487728371, guid: 8507d4526a952cc48a2b0ffda455877b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.67
-      objectReference: {fileID: 0}
-    - target: {fileID: 53324104487728371, guid: 8507d4526a952cc48a2b0ffda455877b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 53324104487728371, guid: 8507d4526a952cc48a2b0ffda455877b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 53324104487728371, guid: 8507d4526a952cc48a2b0ffda455877b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 53324104487728371, guid: 8507d4526a952cc48a2b0ffda455877b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 53324104487728371, guid: 8507d4526a952cc48a2b0ffda455877b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 53324104487728371, guid: 8507d4526a952cc48a2b0ffda455877b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 53324104487728371, guid: 8507d4526a952cc48a2b0ffda455877b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 53324104487728371, guid: 8507d4526a952cc48a2b0ffda455877b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 53324104487728375, guid: 8507d4526a952cc48a2b0ffda455877b, type: 3}
-      propertyPath: m_Name
-      value: DefaultBullet
-      objectReference: {fileID: 0}
-    - target: {fileID: 53324104487728375, guid: 8507d4526a952cc48a2b0ffda455877b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8507d4526a952cc48a2b0ffda455877b, type: 3}
---- !u!4 &556438246 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 53324104487728371, guid: 8507d4526a952cc48a2b0ffda455877b, type: 3}
-  m_PrefabInstance: {fileID: 556438245}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &620384059
 GameObject:
   m_ObjectHideFlags: 0
@@ -1096,7 +1030,7 @@ GameObject:
   - component: {fileID: 814502591}
   - component: {fileID: 814502590}
   - component: {fileID: 814502589}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rounded
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1238,7 +1172,7 @@ GameObject:
   m_Component:
   - component: {fileID: 916695681}
   - component: {fileID: 916695682}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1736,7 +1670,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1020396236}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LightBlock (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1769,7 +1703,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1026585939}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Block (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1823,7 +1757,6 @@ Transform:
   - {fileID: 1415941798}
   - {fileID: 1861231582}
   - {fileID: 625889243}
-  - {fileID: 1258015304}
   - {fileID: 1725647565}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -1842,7 +1775,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1162776734}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1874,7 +1807,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1176940306}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LightBlock (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1910,7 +1843,7 @@ GameObject:
   - component: {fileID: 1240903326}
   - component: {fileID: 1240903325}
   - component: {fileID: 1240903324}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rounded
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2048,7 +1981,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1256017728}
   - component: {fileID: 1256017729}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ConeLight (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2312,52 +2245,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &1258015303
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1258015304}
-  - component: {fileID: 1258015305}
-  m_Layer: 0
-  m_Name: CameraFollow
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1258015304
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1258015303}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1047884737}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1258015305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1258015303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: beff94e93698e0b49acabfd5ef803193, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1961646375}
-  cursorContribution: 0.2
 --- !u!1 &1277295326
 GameObject:
   m_ObjectHideFlags: 3
@@ -2508,7 +2395,7 @@ GameObject:
   - component: {fileID: 1419930700}
   - component: {fileID: 1419930701}
   - component: {fileID: 1419930702}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rounded
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2993,7 +2880,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1621724822}
   - component: {fileID: 1621724823}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ConeLight (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3364,7 +3251,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1814252366}
   - component: {fileID: 1814252367}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3571,7 +3458,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1990832831}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Block (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3606,7 +3493,7 @@ GameObject:
   - component: {fileID: 2001515205}
   - component: {fileID: 2001515204}
   - component: {fileID: 2001515203}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rounded
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3746,7 +3633,7 @@ GameObject:
   - component: {fileID: 2013448294}
   - component: {fileID: 2013448293}
   - component: {fileID: 2013448292}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rounded
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4106,7 +3993,6 @@ Transform:
   - {fileID: 1026585939}
   - {fileID: 351046803}
   - {fileID: 1020396236}
-  - {fileID: 556438246}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4135,7 +4021,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 401911676361140097, guid: 9a126f5cae98f8c408635ad546ae85d3, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 401911676361140097, guid: 9a126f5cae98f8c408635ad546ae85d3, type: 3}
       propertyPath: m_LocalPosition.x
