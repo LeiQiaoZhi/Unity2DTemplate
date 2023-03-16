@@ -43,4 +43,16 @@ public class Popup : MonoBehaviour
         buttonObject.GetComponentInChildren<TextMeshProUGUI>().text = text;
         buttonObject.GetComponent<Button>().onClick.AddListener(callback);
     }
+    
+    public void AddCancelButton(string text, Color? color)
+    {
+        var buttonObject = Instantiate(buttonPrefab, buttonArea);
+        buttonObject.SetActive(true);
+        buttonObject.GetComponent<Image>().color = color.GetValueOrDefault(Color.white);
+        buttonObject.GetComponentInChildren<TextMeshProUGUI>().text = text;
+        buttonObject.GetComponent<Button>().onClick.AddListener(() =>
+        {
+            Destroy(gameObject);
+        });
+    }
 }

@@ -9,13 +9,12 @@ using Object = UnityEngine.Object;
 public class MessageManager : MonoBehaviour
 {
     [SerializeField] private bool testMessages;
-    [SerializeField] GameObject messageCanvasPrefab;
     [SerializeField] GameObject messageObjectPrefab;
     [SerializeField] GameObject popupObjectPrefab;
+    [SerializeField] private GameObject messageCanvas;
 
     public static MessageManager Instance;
 
-    GameObject _messageCanvas;
 
     private void Start()
     {
@@ -50,16 +49,11 @@ public class MessageManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
-        if (_messageCanvas == null)
-        {
-            _messageCanvas = Instantiate(messageCanvasPrefab, transform);
-        }
     }
 
     public void DisplayMessage(string text, Color? textColor = null, float? duration = null)
     {
-        GameObject messageGo = Instantiate(messageObjectPrefab, _messageCanvas.transform);
+        GameObject messageGo = Instantiate(messageObjectPrefab, messageCanvas.transform);
         Message m = messageGo.GetComponent<Message>();
         m.Init(text, textColor, duration);
         Destroy(messageGo, 10f);
@@ -67,7 +61,7 @@ public class MessageManager : MonoBehaviour
 
     public Popup DisplayPopup(string title = "", string text = "", Color? titleColor = null)
     {
-        GameObject messageGo = Instantiate(popupObjectPrefab, _messageCanvas.transform);
+        GameObject messageGo = Instantiate(popupObjectPrefab, messageCanvas.transform);
         Popup m = messageGo.GetComponent<Popup>();
         m.Init(title, text, titleColor);
         return m;

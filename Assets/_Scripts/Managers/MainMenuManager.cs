@@ -92,11 +92,7 @@ public class MainMenuManager : MonoBehaviour
             Application.Quit();
             Destroy(gameObject);
         });
-        popup.AddButton("Cancel", null, () =>
-        {
-            XLogger.Log(Category.UI, "cancel button pressed");
-            Destroy(gameObject);
-        });
+        popup.AddCancelButton("Cancel", null);
     }
 
 
